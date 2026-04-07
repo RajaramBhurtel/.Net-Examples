@@ -1,3 +1,4 @@
+// Example of a constructor and destructor in C#
 class ConsDes
 {
     //constructor

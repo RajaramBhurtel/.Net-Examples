@@ -1,3 +1,5 @@
+// Example of properties in C#
+
 namespace TestNamespace
 {
     public class Person
