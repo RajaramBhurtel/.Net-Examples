@@ -1,6 +1,7 @@
 // Example of using base keyword in C# to access members of the base class from a derived class.
 
 using System;
+
 class Animal
 {
     public string type = "Animal";
