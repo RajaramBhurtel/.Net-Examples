@@ -15,7 +15,7 @@ class Dog : Animal
     }
 }
 
-class Puppy : Dog
+class Puppy : Animal
 {
     // will cause compile-time error
     public override void Speak()
@@ -34,9 +34,9 @@ sealed class Calculator
 }
 
 // This will cause error because Calculator is sealed
-class AdvancedCalculator : Calculator
-{
-}
+// class AdvancedCalculator : Calculator
+// {
+// }
 
 class Program
 {

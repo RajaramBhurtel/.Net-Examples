@@ -21,24 +21,24 @@ class Point
         return p1.X == p2.X && p1.Y == p2.Y;
     }
 
-    // Required when overloading ==
+    // // Required when overloading ==
     public static bool operator !=(Point p1, Point p2)
     {
         return !(p1 == p2);
     }
-    public override bool Equals(object obj)
-    {
-        if (obj is Point p)
-        {
-            return this == p;
-        }
-        return false;
-    }
+    // public override bool Equals(object obj)
+    // {
+    //     if (obj is Point p)
+    //     {
+    //         return this == p;
+    //     }
+    //     return false;
+    // }
 
-    public override int GetHashCode()
-    {
-        return (X, Y).GetHashCode();
-    }
+    // public override int GetHashCode()
+    // {
+    //     return (X, Y).GetHashCode();
+    // }
 
     public void Display()
     {
@@ -61,6 +61,6 @@ class Program
 
         Point p6 = new Point(2, 3);
         Console.WriteLine(p1 == p6); // true
-        Console.WriteLine(p1 == p2); // false
+        // Console.WriteLine(p1 == p2); // false
     }
 }
