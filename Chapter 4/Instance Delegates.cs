@@ -21,6 +21,7 @@ namespace DelegateDemo
     }
 
     class Student
+    
     {
         // Instance Method
         public void DisplayMessageInstance(string msg)

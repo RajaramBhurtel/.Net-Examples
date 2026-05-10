@@ -6,7 +6,8 @@ class Program
     public static void Main(string[] args)
     {
         MathOperation operation = Add;
-        MathOperation operation2 = Subtract;
+        MathOperation operation2 = new MathOperation(Subtract);
+        // MathOperation operation2 = Subtract;
         Console.WriteLine(operation(10, 5));
         Console.WriteLine(operation2(10, 5));
     }

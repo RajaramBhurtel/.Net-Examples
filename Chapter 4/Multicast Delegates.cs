@@ -31,6 +31,12 @@ class TestDelegate
         //calling multicast
         nc(5);
         Console.WriteLine("Value of Num: {0}", getNum());
+       
+        nc -= nc1;
+
+        //calling multicast
+        nc(5);
+        Console.WriteLine("Value of Num: {0}", getNum());
         Console.ReadKey();
     }
 }
